@@ -13,16 +13,19 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = Application.class)
-class DemoTest {
+public class DemoTest {
 
         @Autowired
         private UserService userService;
 
         @Test
         public void test(){
+                System.out.println();
                 User user = userService.getByAccount("haois");
                 if (user != null){
-                        System.out.println(user.toString());
+                        System.out.println(user);
+                }else {
+                        System.out.println("UserNotFountException");
                 }
 
         }
