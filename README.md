@@ -15,6 +15,7 @@ spring-boot 整合 包含spring、mybits、springMvc
     <packaging>war</packaging>
 
 2、如果需要jdbc 依赖 则加入
+<!---->
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-jdbc</artifactId>
@@ -22,12 +23,14 @@ spring-boot 整合 包含spring、mybits、springMvc
 	</dependency>
 	
 3、如果需要mybatis 依赖 则加入
+<!---->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>1.3.0</version>
         </dependency>
 2||3、mysql 依赖
+<!---->
 		<dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -35,8 +38,14 @@ spring-boot 整合 包含spring、mybits、springMvc
         </dependency>
 		
 4、spring boot 单元测试 则加入
+<!---->
 		<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+		<dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
