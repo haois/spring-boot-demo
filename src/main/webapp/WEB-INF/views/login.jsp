@@ -10,7 +10,7 @@
 <c:set var="ctx" value="${pageContext.request.contextPath}" />
 <html>
 <head>
-    <title>Title</title>
+    <title>spring-boot-demo</title>
     <link type="text/css" rel="stylesheet" href="${ctx}/cssjs/bootstrap.min.css">
 </head>
 <body>
