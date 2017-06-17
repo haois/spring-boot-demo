@@ -11,6 +11,7 @@ spring-boot 整合 包含spring、mybits、springMvc
         <scope>provided</scope>
     </dependency>
 和
+<!---->
     <packaging>war</packaging>
 
 2、如果需要jdbc 依赖 则加入
